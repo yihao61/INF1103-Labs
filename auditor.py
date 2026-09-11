@@ -20,11 +20,13 @@ while 1:
         print("Invalid number, please try again!")
         invEntry += 1
         continue
+
+    if inventory + int(userInput) > 500:
+        Report()
+        print("Overstock detected! Teminating Program...")
+        break
     
     inventory += int(userInput)
     print("Inventory Updated! Current inventory: ", inventory)
 
-    if inventory > 500:
-        Report()
-        print("Overstock detected! Teminating Program...")
-        break
+    
