@@ -5,3 +5,6 @@ while 1:
 
     if userInput.lower() == "quit":
         break
+    
+    inventory += int(userInput)
+    print("Inventory Updated! Current inventory: ", inventory)
