@@ -22,8 +22,8 @@ while 1:
         continue
 
     if inventory + int(userInput) > 500:
-        Report()
         print("Overstock detected! Teminating Program...")
+        Report()
         break
     
     inventory += int(userInput)
