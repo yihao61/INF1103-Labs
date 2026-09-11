@@ -12,3 +12,7 @@ while 1:
     
     inventory += int(userInput)
     print("Inventory Updated! Current inventory: ", inventory)
+
+    if inventory > 500:
+        print("Overstock detected! Teminating Program...")
+        break
